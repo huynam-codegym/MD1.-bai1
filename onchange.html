@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tieu De</title>
+</head>
+<body>
+<p>Hãy lựa chọn vào những mục trên</p>
+<select id="idol" onchange="my_hello()">
+  <option value="Du lịch">Du lịch</option>
+  <option value="Thể thao">Thể thao</option>
+  <option value=" Cờ vua"> Cờ vua</option>
+  <option value="Cờ tướng">Cờ tướng</option>
+</select>
+<script>
+  function my_hello() {
+    var selectedValue = document.getElementById("idol").value;
+    alert(selectedValue);
+  }
+</script>
+
+</body>
+</html>

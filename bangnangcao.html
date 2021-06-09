@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tieude</title>
+</head>
+<body>
+<p>Hãy lựa chọn vào những mục trên</p>
+<select> id="myselected" onchange="my_hello()">
+    <option value="Du lịch">Du lịch</option>
+    <option value="Thể thao">Thể thao</option>
+    <option value=" Cờ vua"> Cờ vua</option>
+    <option value="Cờ tướng">Cờ tướng</option>
+</select>
+<script>
+    function my_hello() {
+        var selectedValue = document.getElementById("myselected").value;
+        alert(selectedValue);
+    }
+</script>
+
+</body>
+</html>
