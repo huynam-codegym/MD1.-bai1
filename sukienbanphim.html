@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sukienbanphim</title>
+</head>
+<body>
+
+<img id="bong" src="https://wall.vn/wp-content/uploads/2019/11/hinh-nen-bong-da-dep-20.jpg" style="position:absolute;left:10; top:10;" height="200" width="350"/>"
+<script>
+ function upArrowPressed() {
+let element = document.getElementById("bong");
+element.style.top = parseInt(element.style.top) - 15 + 'px';
+}
+ function downArrowPressed() {
+     let element = document.getElementById("bong");
+     element.style.top = parseInt(element.style.top) + 15 + 'px';
+ }
+ function leftArrowPressed() {
+     let element = document.getElementById("bong");
+     element.style.top = parseInt(element.style.top) - 15 + 'px';
+ }
+ function rightArrowPressed() {
+     let element = document.getElementById("bong");
+     element.style.top = parseInt(element.style.top) + 15 + 'px';
+ }
+ function moveSelection(abc) {
+     switch (abc.keyCode) {
+         case 37:
+             leftArrowPressed();
+             break;
+         case 39:
+             rightArrowPressed();
+             break;
+         case 38:
+             upArrowPressed();
+             break;
+         case 40:
+             downArrowPressed();
+             break;
+     }
+ }
+
+
+</script>
+</body>
+</html>
