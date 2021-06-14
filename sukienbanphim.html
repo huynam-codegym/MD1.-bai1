@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>sukienbanphim</title>
 </head>
-<body>
+<body onLoad="docReady()">
 
-<img id="bong" src="https://wall.vn/wp-content/uploads/2019/11/hinh-nen-bong-da-dep-20.jpg" style="position:absolute;left:10; top:10;" height="200" width="350"/>"
+<img id="bong" src="https://wall.vn/wp-content/uploads/2019/11/hinh-nen-bong-da-dep-20.jpg" style="position:absolute;left:0; top:0;" height="200" width="350"/>"
 <script>
- function upArrowPressed() {
-let element = document.getElementById("bong");
-element.style.top = parseInt(element.style.top) - 15 + 'px';
+    function upArrowPressed() {
+    let element = document.getElementById("bong");
+      element.style.top = parseInt(element.style.top) - 15 + 'px';
 }
  function downArrowPressed() {
      let element = document.getElementById("bong");
@@ -40,8 +40,11 @@ element.style.top = parseInt(element.style.top) - 15 + 'px';
              break;
      }
  }
+ function docReady() {
+     window.addEventListener('keydown', moveSelection);
+ }
 
 
 </script>
-</body>
+</>
 </html>

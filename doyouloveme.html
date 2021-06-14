@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3> Do You Love Me </h3>
+<button  id="yeu" type = button style="background-color: tomato; position: absolute; left: 100px; top: 50px"> Yes </button>
+<button  id="khong" type = button style = "position:absolute;  left: 10px; top: 50px" onmouseover="didau()" > No</button>
+<script>
+    function didau() {
+    let chay = document.getElementById("khong")
+ Math.random()
+    chay.style.left=window.innerWidth*Math.random() + "px";
+    chay.style.right=window.innerHeight*Math.random() + "px";
+
+    }
+</script>
+
+
+
+
+</body>
+
+</html>
