@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienlainganhang</title>
+</head>
+<body>
+<script>
+    let money = +prompt("nhap vao so tien ban gui");
+    let tiengoc= money;
+    let rate = 0.005;
+    let lai = 0;
+    let month = +prompt ("nhap vao so thang ban gui");
+    for (i=1; i<=month; i++){
+        money+=money*rate;
+    }
+    lai = money-tiengoc;
+    document.write("tien lai la  :"+lai);
+</script>
+</body>
+</html>

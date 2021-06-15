@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<script>
+
 // let x = 1, i;
 // for (i = 0; i < 3; i = i + 2) {
 // x = x + 1;
@@ -27,15 +27,32 @@
 //   console.log("hi");
 //   i++;
 
-let x = 3;
-
-let i = 0;
-while (i < 3) {
-  x += 1;
-  i += 1;
-
+// let x = 3;
+//
+// let i = 0;
+// while (i < 3) {
+//   x += 1;
+//   i += 1;
+//
+// }
+// console.log(x);
+// }
+<script>
+    let ketqua=""
+    for (i=1;i<=10;i++){
+    for (j=1;j<=10;j++){
+    if (i==1 ||i==10){
+    ketqua+="*";
+}else {
+    if(j==1 ||j==10){
+    ketqua+="*";
+} else{
+    ketqua+="&nbsp&nbsp";
 }
-console.log(x);
 }
+} ketqua+="<br>";
+}
+    document.write(ketqua);
 </script>
+
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>indayfifibolaci</title>
+</head>
+<body>
+<script>
+  let n = +prompt("nhap vao so luong so fibonaci ban muon hien thi");
+  let hienthi = "1;1;";
+  let m= 2;
+  let a = 1;
+  let b = 1;
+  let c;
+  while(m<n){
+    c= a +b;
+    a = b;
+    b = c;
+    m+=1;
+    hienthi+=c+";"
+  }
+  document.write(hienthi);
+</script>
+</body>
+</html>
